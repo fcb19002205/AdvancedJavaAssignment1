@@ -3,7 +3,7 @@ package Demo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StudentUtils {
+public abstract class StudentUtils implements Filter, Mapper {
 
     public static List<Student> filterStudents(List<Student> students, Filter filter) {
         List<Student> filteredList = new ArrayList<>();

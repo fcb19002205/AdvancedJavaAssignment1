@@ -14,7 +14,7 @@ public class Main {
         students.add(new Student(4, "Petra", 22,4.8));
 
 
-        List<Student> filteredStudents = StudentUtils.filterStudents(students, (student -> student.getGpa() > 4.3 && student.getAge() >= 18));
+        List<Student> filteredStudents = StudentUtils.filterStudents(students, (student) -> student.getGpa() > 4.3 && student.getAge() >= 18);
         System.out.println("Filtered students: ");
         filteredStudents.forEach(System.out::println);
 
